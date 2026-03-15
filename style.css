@@ -7,6 +7,11 @@
   font-family: "Poppins", sans-serif;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 :root {
   --orange-clr: #e96c28;
   --white-clr: #fff;
@@ -15,4 +20,72 @@
   --light-gray: #c4c4c4;
   --dawn-pink: #fae7e5;
   --frosted-mint: #dcfef9;
+}
+
+.logo-txt {
+  font-size: 3rem;
+  color: var(--orange-clr);
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+span {
+  color: var(--black-clr);
+}
+
+.navlist {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+li {
+  list-style: none;
+}
+
+.navlinks {
+  color: var(--black-clr);
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.active,
+.navlinks:hover {
+  color: var(--orange-clr);
+}
+
+.icons-link {
+  background-color: var(--orange-clr);
+  width: 3rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  display: inline-block;
+  text-align: center;
+  line-height: 3rem;
+  transition: 0.3s ease-in-out;
+}
+
+.icons-link:hover {
+  transform: translateY(-10%);
+}
+
+.fa-solid {
+  font-size: 1.1rem;
+  color: var(--white-clr);
+}
+
+header {
+  height: 6vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding-inline: 5rem;
 }
