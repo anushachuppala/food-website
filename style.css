@@ -4,12 +4,12 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif;
 }
 
 html,
 body {
   overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
 }
 
 :root {
@@ -22,6 +22,7 @@ body {
   --frosted-mint: #dcfef9;
 }
 
+/* <!-- header part -- >  */
 .logo-txt {
   font-size: 3rem;
   color: var(--orange-clr);
@@ -32,7 +33,7 @@ a {
   text-decoration: none;
 }
 
-span {
+.logo-txt span {
   color: var(--black-clr);
 }
 
@@ -52,7 +53,7 @@ li {
   font-size: 2rem;
 }
 
-.active,
+.navlinks.active,
 .navlinks:hover {
   color: var(--orange-clr);
 }
@@ -87,5 +88,61 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 100%;
-  padding-inline: 5rem;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.hamburger {
+  cursor: pointer;
+  display: none;
+}
+
+.burger {
+  background: var(--black-clr);
+  width: 2.3rem;
+  height: 0.25rem;
+  margin: 0.3rem;
+  border-radius: 2rem;
+}
+
+/* <!-- sections part --> */
+
+.hero-section {
+  height: calc(100vh - 6vh);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content {
+  flex: 1;
+}
+
+.image-container {
+  flex: 1;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-size: 3.5rem;
+  line-height: 4rem;
+  margin-top: 1rem;
+}
+
+.watch {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+p {
+  color: var(--gray-clr);
+  margin-block: 1rem;
 }
