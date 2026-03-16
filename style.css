@@ -24,7 +24,7 @@ body {
 
 /* <!-- header part -- >  */
 .logo-txt {
-  font-size: 3rem;
+  font-size: 1.5rem;
   color: var(--orange-clr);
   font-weight: bold;
 }
@@ -41,6 +41,7 @@ a {
   display: flex;
   align-items: center;
   gap: 2rem;
+  font-size: 0.5rem;
 }
 
 li {
@@ -60,13 +61,13 @@ li {
 
 .icons-link {
   background-color: var(--orange-clr);
-  width: 3rem;
+  width: 2.3rem;
   aspect-ratio: 1;
   border-radius: 50%;
   margin-right: 0.5rem;
   display: inline-block;
   text-align: center;
-  line-height: 3rem;
+  line-height: 2.3rem;
   transition: 0.3s ease-in-out;
 }
 
@@ -80,7 +81,7 @@ li {
 }
 
 header {
-  height: 6vh;
+  height: 13vh;
 }
 
 .navbar {
@@ -123,6 +124,20 @@ header {
 
 .image-container {
   flex: 1;
+  position: relative;
+}
+
+.image-container::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  background: var(--dawn-pink);
+  width: 35rem;
+  height: 30vh;
+  border-radius: 50%;
+  z-index: -1;
+  filter: blur(100px);
 }
 
 img {
@@ -144,5 +159,42 @@ h1 {
 
 p {
   color: var(--gray-clr);
-  margin-block: 1rem;
+  margin-block: 1.5rem;
+  max-width: 500px;
+}
+
+.btn-container {
+  display: flex;
+  gap: 1.5rem;
+}
+
+button {
+  background-color: var(--orange-clr);
+  color: var(--white-clr);
+  border: 0.1rem solid var(--orange-clr);
+  padding: 0.55rem 1.5rem;
+  border-radius: 5rem;
+  font-size: 1rem;
+}
+
+[data-type="bordered-btn"] {
+  background: transparent;
+  color: var(--orange-clr);
+}
+
+store section .other-section {
+  padding-block: 5rem;
+}
+
+.row-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.column-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
