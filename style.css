@@ -226,7 +226,6 @@ h2 {
   width: 15rem;
   text-align: center;
   border-radius: 1rem;
-  padding-block: 2.5rem;
   box-shadow: rgba(0, 0, 0, 0.142) 0px 1px 4px;
   transition: 0.2s ease-in-out;
 }
@@ -238,6 +237,10 @@ h2 {
   cursor: pointer;
 }
 
+[data-type="category"] {
+  padding-block: 2.5rem;
+}
+
 /* <!-- Featured Food section --> */
 
 h4 {
@@ -246,6 +249,15 @@ h4 {
 
 .image-part img {
   width: 100%;
-  height: 200px;
+  height: 23vh;
   object-fit: cover;
+}
+
+[data-type="item"] {
+  overflow: hidden;
+}
+
+.detail {
+  margin-top: 0.7rem;
+  margin-bottom: 1rem;
 }
